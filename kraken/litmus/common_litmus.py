@@ -99,9 +99,6 @@ def wait_for_initialized(engine_name, experiment_name, namespace):
         chaos_engine = kubecli.get_litmus_chaos_object(kind='chaosengine', name=engine_name,
                                                        namespace=namespace).engineStatus
         engine_status = chaos_engine.strip()
-        if engine_counter >= max_tries:
-            logging.error("Chaos engine " + experiment_name + " took longer than 5 minutes to be initialized")
-            return False
         engine_counter += 1
         # need to see if error in run
         if "notfound" in engine_status.lower():
