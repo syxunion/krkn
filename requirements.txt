@@ -23,4 +23,4 @@ werkzeug==2.0.3
 aliyun-python-sdk-core-v3
 aliyun-python-sdk-ecs
 arcaflow-plugin-sdk==0.3.0
-vsphere-automation-sdk-python
+git+https://github.com/vmware/vsphere-automation-sdk-python.git
