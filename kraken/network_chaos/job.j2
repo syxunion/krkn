@@ -9,7 +9,7 @@ spec:
       hostNetwork: true
       containers:
       - name: networkchaos
-        image: docker.io/sunyuxuan/tools:latest
+        image: localhost/testtools:1.0
         command: ["/bin/sh",  "-c", "{{cmd}}"]
         securityContext:
           privileged: true
