@@ -9,7 +9,7 @@ spec:
       hostNetwork: true
       containers:
       - name: networkchaos
-        image: localhost/testtools:1.0
+        image: localhost/fedora/tools:latest
         command: ["/bin/sh",  "-c", "{{cmd}}"]
         securityContext:
           privileged: true
